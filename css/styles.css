@@ -40,6 +40,12 @@ a {
     color: var(--font);
 }
 
+h3 {
+    font-size: var(--fontMedium);
+    font-weight: 700;
+    color: var(--font);
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -367,7 +373,7 @@ img {
     align-items: center;
     width: 100%;
     padding: 10px 50px 10px 50px;
-
+    font-size: var(--fontMedium);
 }
 
 .stripeIcon {
@@ -484,7 +490,7 @@ img {
     background-color: var(--boxesBg);
     color: var(--font);
     padding: 10px 10px 100px 10px;
-    font-size: 1.1rem;
+    font-size: var(--fontSmall);
     border: rgb(255, 1, 196) 0px solid;
 
 }
