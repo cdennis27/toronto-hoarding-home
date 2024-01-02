@@ -552,6 +552,20 @@ img {
 
 }
 
+.footerLogoImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: rgb(255, 255, 255) 0px solid;
+    
+    max-height: 150px;
+    height: 120px;
+    width: auto !important;
+    object-fit: fill;
+    
+}
+
 .poweredBy {
     display: flex;
     flex-direction: row;
