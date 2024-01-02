@@ -273,6 +273,29 @@ img {
     border: var(--buttonBgAccentHover) 1px solid;
 }
 
+.containerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    height: 50px;
+    background-color: var(--bg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontBig);
+    border: rgb(255, 1, 196) 0px solid;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -348,6 +371,10 @@ img {
     align-items: center;
     padding-top: 10px;
     width: 100%;
+}
+
+.technologiesSummary {
+    padding: 10px 0 10px 0;
 }
 
 .stripe {
