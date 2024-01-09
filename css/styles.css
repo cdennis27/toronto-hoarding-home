@@ -6,7 +6,7 @@
     --bg: rgb(255, 255, 255);
     --accentColor: rgb(232, 232, 232);
     --buttonBgAccent: rgb(107, 181, 179);
-    --buttonBgHover: rgb(231, 231, 231);
+    --buttonBgHover: rgba(136, 231, 227, 0.683);
     --fontHover: rgb(0, 0, 0);
     --buttonBgAccentHover: rgb(183, 183, 183);
     --fontBig: 26px;
@@ -14,6 +14,9 @@
     --fontSmall: 14px;
     --boxesBg: rgb(224, 224, 224);
     --emergency: rgb(255, 255, 0);
+    --modalBg: rgba(0, 0, 0, 0.302);
+    --modalButtons: rgba(255, 255, 255, 0.908);
+    
 }
 
 * {
@@ -103,7 +106,7 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    
+
     justify-content: center;
     gap: 10px;
     align-items: center;
@@ -151,11 +154,34 @@ nav a {
     gap: 0px;
 }
 
+.toggle-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+    height: 100%;
+    padding: 20px 10px 20px 10px;
+}
+
+.toggle-button .bar {
+    height: 6px;
+    width: 100%;
+    background-color: var(--buttonBg);
+    color: var(--font);
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px;
+}
+
+
+
 .button:hover {
 
     color: var(--fontHover);
     background-color: var(--buttonBgHover);
-    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    transition: 300ms ease-in-out;
 }
 
 .logoImg {
@@ -772,5 +798,44 @@ img {
 
     .heroButton {
         font-size: 0.6rem;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        background-color: var(--modalBg);
+        height: 300px;
+        width: 200px;
+    }
+
+    .navbar a {
+        background-color: var(--modalButtons);
+    }
+
+    .logoContainer {
+        position: absolute;
+        left: 0px;
+        padding: 0;
+    }
+
+    .logoImg {
+        padding: 0, 0, 0, 10px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+
     }
 }
