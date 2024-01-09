@@ -681,125 +681,7 @@ img {
 
 
 
-@media only screen and (min-width: 64.063em) {
-
-    .stickyfooter,
-    .content .stickyfooter {
-        grid-template-columns: 0 minmax(0, 1fr);
-    }
-}
-
-
-
-@media screen and (max-width: 950px) {
-    .bannerText {
-        font-size: 1.4rem;
-    }
-
-    .bannerSubtitle {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 770px) {
-    .bannerText {
-        font-size: 1.2rem;
-    }
-
-    .bannerSubtitle {
-        font-size: 1rem;
-    }
-
-    .heroButton {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .bannerText {
-        font-size: 1rem;
-    }
-
-    .bannerSubtitle {
-        font-size: 0.8rem;
-    }
-
-    .heroButton {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .logoLeft {
-        padding-left: 0px;
-    }
-
-    .logoRight {
-        padding-right: 0px;
-    }
-
-    .bannerText {
-        font-size: 0.9rem;
-    }
-
-    .bannerSubtitle {
-        font-size: 0.7rem;
-    }
-
-    .heroButton {
-        font-size: 1rem;
-    }
-}
-
-
-@media screen and (max-width: 435px) {
-
-    .emergency {
-        font-size: 0.8rem;
-    }
-
-    .bannerText {
-        font-size: 0.8rem;
-    }
-
-    .heroButton {
-        font-size: 0.7rem;
-    }
-}
-
-@media screen and (max-width: 370px) {
-
-    .emergency {
-        font-size: 0.7rem;
-    }
-
-    .bannerText {
-        font-size: 0.7rem;
-    }
-
-    .bannerSubtitle {
-        font-size: 0.6rem;
-    }
-
-    .heroButton {
-        font-size: 0.6rem;
-    }
-}
-
-@media screen and (max-width: 315px) {
-
-    .emergency {
-        font-size: 0.5rem;
-    }
-
-    .bannerText {
-        font-size: 0.4rem;
-    }
-
-    .heroButton {
-        font-size: 0.6rem;
-    }
-}
+/* Media Queries */
 
 
 
@@ -809,6 +691,7 @@ img {
     }
 
     .navbar {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
@@ -821,6 +704,7 @@ img {
 
     .navbar a {
         background-color: var(--modalButtons);
+        
     }
 
     .logoContainer {
@@ -838,4 +722,11 @@ img {
         justify-content: center;
 
     }
+
+    .navbar.active {
+        display: flex;
+
+    }
+
+
 }
