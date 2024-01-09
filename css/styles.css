@@ -8,7 +8,7 @@
     --buttonBgAccent: rgb(107, 181, 179);
     --buttonBgHover: rgba(136, 231, 227, 0.683);
     --fontHover: rgb(0, 0, 0);
-    --buttonBgAccentHover: rgb(183, 183, 183);
+    --buttonBgAccentHover: rgba(1, 255, 22, 0.683);
     --fontBig: 26px;
     --fontMedium: 20px;
     --fontSmall: 14px;
@@ -363,7 +363,7 @@ img {
 .callButton:hover {
     background-color: var(--buttonBgAccentHover);
     color: var(--fontHover);
-    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    
     transition: 400ms ease-in-out;
     border: var(--buttonBgAccentHover) 1px solid;
 }
@@ -394,7 +394,7 @@ img {
 
 
 
-.container1000 {
+.mainServices {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -403,7 +403,7 @@ img {
 
 }
 
-.mainServices {
+.container1100 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -411,7 +411,7 @@ img {
     justify-content: center;
     gap: 2.5rem;
     align-items: center;
-    width: 1000px;
+    width: 1100px;
     height: 100%;
     background-color: var(--headerBg);
     color: var(--font);
