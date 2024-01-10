@@ -1,7 +1,7 @@
 :root {
     --headerBg: rgb(255, 255, 255);
     --buttonBg: rgb(50, 102, 102);
-    --font: rgb(44, 44, 44);
+    --font: rgb(51, 51, 51);
     --headerFont: rgb(255, 255, 255);
     --bg: rgb(255, 255, 255);
     --accentColor: rgb(232, 232, 232);
@@ -14,20 +14,22 @@
     --fontSmall: 14px;
     --boxesBg: rgb(224, 224, 224);
     --emergency: rgb(255, 255, 0);
+    --callButtonFont: rgb(65, 65, 65);
     --modalBg: rgba(0, 0, 0, 0.302);
     --modalButtons: rgba(255, 255, 255, 0.908);
-    
-}
-:root {
+
+    /* Variables for Menu Button  */
     --bar-width: 40px;
     --bar-height: 8px;
     --hamburger-gap: 6px;
-    --foreground: #333;
+    --foreground: rgb(52, 52, 52);
     --background: white;
     --hamburger-margin: 8px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-  }
+}
+
+
 
 * {
     box-sizing: border-box;
@@ -168,44 +170,46 @@ nav a {
 .toggle-button {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
 
-  display: none;
-  flex-direction: column;
-  gap: var(--hamburger-gap);
-  width: 60px;
-  position: absolute;
-  top: var(--hamburger-margin);
-  right: var(--hamburger-margin);
-  z-index: 2;
-  cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: 40px;
+    position: absolute;
+    top: var(--hamburger-margin);
+    right: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
 
 }
 
 
 
-.menuButton[aria-expanded="true"] {
-    --foreground: rgb(238, 255, 0);
-  --background: #333;
-    
+.toggle-button[aria-expanded="true"] {
+    --foreground: var(--font);
+    --background: #333;
+
 }
 
-.menuButton[aria-expanded="false"]::before, .menuButton[aria-expanded="false"]::after, .menuButton[aria-expanded="false"] {
-    border: 1px solid var(--foreground);
+.menuButton[aria-expanded="false"]::before,
+.menuButton[aria-expanded="false"]::after,
+.menuButton[aria-expanded="false"] {
+    border: 0px solid var(--foreground);
     box-shadow: 0 0 0 0px var(--foreground);
-    
+
 }
 
 .toggle-button::before,
 .toggle-button::after,
 .toggle-button .menuButton {
-  content: "";
-  width: var(--bar-width);
-  height: var(--bar-height);
-  background-color: var(--foreground);
-  border-radius: 9999px;
-  transform-origin: left center;
-  transition: opacity var(--animation-timing), width var(--animation-timing),
-    rotate var(--animation-timing), translate var(--animation-timing),
-    background-color var(--animation-timing);
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+        rotate var(--animation-timing), translate var(--animation-timing),
+        background-color var(--animation-timing);
 }
 
 .toggle-button .menuButton {
@@ -214,28 +218,33 @@ nav a {
     margin: 0;
     outline: none;
     pointer-events: none;
-  }
+}
 
 
-  .toggle-button[aria-expanded="true"]::before {
+.toggle-button[aria-expanded="true"]::before {
     rotate: 45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -2);
-  }
-  
-  .toggle-button[aria-expanded="true"]::after {
+}
+
+.toggle-button[aria-expanded="true"]::after {
     rotate: -45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
     opacity: 100%;
-  }
-  
-  .menuButton[aria-expanded="true"] {
+}
+
+.menuButton[aria-expanded="true"] {
     opacity: 0;
     width: 0;
-  }
+}
 
-
+.toggle-button[aria-expanded="true"]::before,
+.toggle-button[aria-expanded="true"]::after,
+.menuButton[aria-expanded="true"] {
+    width: 50px;
+    x: 10;
+}
 
 
 
@@ -289,7 +298,8 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bar1 {
     rotate: 45deg;
-    /*transform: translate(0px, 10px);*//*
+    /*transform: translate(0px, 10px);*/
+/*
     opacity: 20%;
     x:10;
     y:45;
@@ -300,7 +310,8 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bar3 {
     rotate: -45deg;*/
-    /*transform: translate(0px, -10px);*//*
+/*transform: translate(0px, -10px);*/
+/*
     opacity: 100%;
     x: 10;
     y: 45;
@@ -327,12 +338,12 @@ nav a {
     justify-content: center;
     align-items: center;
     border: rgb(255, 255, 255) 0px solid;
-    
+
     max-height: 50px;
     height: 40px;
     width: auto !important;
     object-fit: fill;
-    
+
 }
 
 .buttonEmergency {
@@ -428,7 +439,7 @@ img {
     top: 70px;
     line-height: 50px;
     font-size: var(--fontMedium);
-    color: rgb(51, 51, 51);
+    color: var(--callButtonFont);
     width: 100%;
     text-align: center;
     font-weight: 700;
@@ -448,7 +459,7 @@ img {
 .callButton:hover {
     background-color: var(--buttonBgAccentHover);
     color: var(--fontHover);
-    
+
     transition: 400ms ease-in-out;
     border: var(--buttonBgAccentHover) 1px solid;
 }
@@ -761,12 +772,12 @@ img {
     justify-content: center;
     align-items: center;
     border: rgb(255, 255, 255) 0px solid;
-    
+
     max-height: 150px;
     height: 120px;
     width: auto !important;
     object-fit: fill;
-    
+
 }
 
 .poweredBy {
@@ -837,7 +848,7 @@ img {
 
     .navbar a {
         background-color: var(--modalButtons);
-        
+
     }
 
     .logoContainer {
