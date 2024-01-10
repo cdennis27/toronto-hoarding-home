@@ -201,7 +201,7 @@ nav a {
         opacity 0ms 100ms
    ;
     transform-origin: center center;
-    
+    color: green;
 
 }
 
@@ -212,12 +212,13 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bar1 {
     y: 45;
-    
+    x: 10;
 }
 
 .menuButton[aria-expanded="true"] .bar3 {
     y: 45;
-    
+    x: 10;
+    opacity: 50%;
 }
 
 .menuButton[aria-expanded="true"] .bar1 {
