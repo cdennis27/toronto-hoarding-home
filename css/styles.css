@@ -187,7 +187,7 @@ nav a {
         rotate 100ms ease-in,
         opacity 0ms 100ms
    ;
-    transform-origin: center;
+    transform-origin: center center;
 
 }
 
@@ -201,7 +201,17 @@ nav a {
 
 }
 
-.menuButton[aria-expanded="true"] :is(.bar1, .bar3) {
+/*.menuButton[aria-expanded="true"] :is(.bar1, .bar3) {
+    y: 45;
+    
+}*/
+
+.menuButton[aria-expanded="true"] .bar1 {
+    y: 45;
+    
+}
+
+.menuButton[aria-expanded="true"] .bar3 {
     y: 45;
     
 }
