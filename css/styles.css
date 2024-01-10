@@ -224,15 +224,15 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bar1 {
     rotate: 45deg;
-    transform: translate(0px, 0px);
-    opacity: 50%;
+    transform: translate(20px, 0px);
+    opacity: 80%;
 }
 
 
 
 .menuButton[aria-expanded="true"] .bar3 {
     rotate: -45deg;
-    transform: translate(0px, 0px);
+    transform: translate(-10px, 0px);
     opacity: 50%;
 }
 
