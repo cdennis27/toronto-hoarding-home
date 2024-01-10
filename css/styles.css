@@ -201,7 +201,7 @@ nav a {
         opacity 0ms 100ms
    ;
     transform-origin: center center;
-    color: green;
+    
 
 }
 
@@ -218,26 +218,27 @@ nav a {
 .menuButton[aria-expanded="true"] .bar3 {
     y: 45;
     x: 10;
-    opacity: 50%;
+    
+    
 }
 
 .menuButton[aria-expanded="true"] .bar1 {
     rotate: 45deg;
-    translate: 0 0;
+    transform: translate(0px, 0px);
+}
+
+
+
+.menuButton[aria-expanded="true"] .bar3 {
+    rotate: -45deg;
+    transform: translate(0px, 0px);
+    opacity: 50%;
 }
 
 .menuButton[aria-expanded="true"] .bar2 {
     opacity: 0;
     
 }
-
-.menuButton[aria-expanded="true"] .bar3 {
-    rotate: -45deg;
-    translate: 0 0;
-    
-}
-
-
 
 
 
