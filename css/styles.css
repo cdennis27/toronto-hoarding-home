@@ -225,7 +225,7 @@ nav a {
 .menuButton[aria-expanded="true"] .bar1 {
     rotate: 45deg;
     /*transform: translate(0px, 10px);*/
-    opacity: 80%;
+    opacity: 100%;
     transform-origin: center center;
 }
 
@@ -234,7 +234,7 @@ nav a {
 .menuButton[aria-expanded="true"] .bar3 {
     rotate: -45deg;
     /*transform: translate(0px, -10px);*/
-    opacity: 50%;
+    opacity: 80%;
     transform-origin: center center;
 }
 
