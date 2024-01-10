@@ -179,6 +179,7 @@ nav a {
 .menuButton {
     border: var(--font) 0px solid;
     border-radius: 5px;
+    transform-origin: center center;
 }
 
 .menuButton .bars {
@@ -441,7 +442,7 @@ img {
 }
 
 .mainServicesPhoto {
-    border: red 0px solid;
+    border: rgb(0, 26, 255) 0px solid;
     height: 100%;
     width: 100%;
     object-fit: cover;
