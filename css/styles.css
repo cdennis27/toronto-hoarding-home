@@ -177,7 +177,7 @@ nav a {
 }
 
 .menuButton {
-    border: var(--font) 0px solid;
+    border: var(--font) 2px solid;
     border-radius: 5px;
     transform-origin: center center;
 }
