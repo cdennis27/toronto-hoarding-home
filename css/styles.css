@@ -232,7 +232,7 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bar3 {
     rotate: -45deg;
-    transform: translate(0px, -100px);
+    transform: translate(0px, -10px);
     opacity: 50%;
 }
 
