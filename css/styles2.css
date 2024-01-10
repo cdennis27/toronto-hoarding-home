@@ -34,7 +34,7 @@ body {
 }
 
 .hamburger-menu:has(input:checked) {
-  --foreground: rgb(255, 0, 0);
+  --foreground: blue;
   --background: #333;
 }
 
