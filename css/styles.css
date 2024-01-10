@@ -181,6 +181,7 @@ nav a {
     border: var(--font) 2px solid;
     border-radius: 5px;
     transform-origin: center center;
+    
 }
 
 .menuButton .bars {
@@ -199,6 +200,7 @@ nav a {
         rotate 100ms ease-in 100ms,
         opacity 0ms 100ms
    ;
+    transform-origin: center center;
     
 
 }
@@ -220,7 +222,7 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bar1 {
     rotate: 45deg;
-    translate: 0, 45;
+    translate: 0 0;
 }
 
 .menuButton[aria-expanded="true"] .bar2 {
@@ -230,7 +232,7 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bar3 {
     rotate: -45deg;
-    translate: 0, -45;
+    translate: 0 0;
     
 }
 
