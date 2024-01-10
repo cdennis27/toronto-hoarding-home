@@ -190,7 +190,7 @@ nav a {
         rotate 100ms ease-in,
         opacity 0ms 100ms
    ;
-    transform-origin: center center;
+    transform-origin: 50% 50%;
 
 }
 
@@ -226,7 +226,6 @@ nav a {
     rotate: 45deg;
     /*transform: translate(0px, 10px);*/
     opacity: 80%;
-    transform-origin: center center;
 }
 
 
@@ -235,7 +234,6 @@ nav a {
     rotate: -45deg;
     /*transform: translate(0px, -10px);*/
     opacity: 50%;
-    transform-origin: center center;
 }
 
 .menuButton[aria-expanded="true"] .bar2 {
