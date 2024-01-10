@@ -183,9 +183,9 @@ nav a {
 
 .menuButton .bars {
     transition:
-        y 300ms ease-in 300ms,
-        rotate 300ms ease-in,
-        opacity 0ms 300ms;
+        y 100ms ease-in 100ms,
+        rotate 100ms ease-in,
+        opacity 0ms 100ms;
    ;
     transform-origin: center;
 
@@ -193,9 +193,9 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bars {
     transition:
-        y 300ms ease-in,
-        rotate 300ms ease-in 300ms,
-        opacity 0ms 300ms;
+        y 100ms ease-in,
+        rotate 100ms ease-in 100ms,
+        opacity 0ms 100ms;
    ;
     
 
