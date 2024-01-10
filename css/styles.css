@@ -188,7 +188,7 @@ nav a {
         rotate 100ms ease-in,
         opacity 0ms 100ms
    ;
-    transform-origin: center center;
+    transform-origin: 50% 50%;
 
 }
 
