@@ -211,11 +211,13 @@ nav a {
 }*/
 
 .menuButton[aria-expanded="true"] .bar1 {
+    transform-origin: center center;
     y: 45;
     x: 10;
 }
 
 .menuButton[aria-expanded="true"] .bar3 {
+    transform-origin: center center;
     y: 45;
     x: 10;
     
@@ -225,8 +227,10 @@ nav a {
 .menuButton[aria-expanded="true"] .bar1 {
     rotate: 45deg;
     /*transform: translate(0px, 10px);*/
-    opacity: 100%;
-    transform-origin: center center;
+    opacity: 20%;
+    x:10;
+    y:45;
+    transform-origin: 50 center;
 }
 
 
@@ -234,8 +238,10 @@ nav a {
 .menuButton[aria-expanded="true"] .bar3 {
     rotate: -45deg;
     /*transform: translate(0px, -10px);*/
-    opacity: 30%;
-    transform-origin: center center;
+    opacity: 100%;
+    x: 10;
+    y: 45;
+    transform-origin: 50 center;
 }
 
 .menuButton[aria-expanded="true"] .bar2 {
