@@ -18,6 +18,16 @@
     --modalButtons: rgba(255, 255, 255, 0.908);
     
 }
+:root {
+    --bar-width: 40px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: #333;
+    --background: white;
+    --hamburger-margin: 8px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  }
 
 * {
     box-sizing: border-box;
@@ -156,34 +166,87 @@ nav a {
 }
 
 .toggle-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    width: 60px;
-    height: 100%;
-    padding: 0px 0px 0px 0px;
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+  display: none;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: 60px;
+  position: absolute;
+  top: var(--hamburger-margin);
+  right: var(--hamburger-margin);
+  z-index: 2;
+  cursor: pointer;
 
 }
 
-.toggle-button .bar {
-    height: 6px;
-    width: 100%;
-    background-color: var(--buttonBg);
-    color: var(--font);
-    border-radius: 10px;
-    padding: 0px 5px 0px 5px;
-}
 
-.menuButton {
-    border: var(--font) 2px solid;
-    border-radius: 5px;
-    transform-origin: center center;
+
+.menuButton[aria-expanded="true"] {
+    --foreground: rgb(238, 255, 0);
+  --background: #333;
     
 }
 
+.menuButton[aria-expanded="false"]::before, .menuButton[aria-expanded="false"]::after, .menuButton[aria-expanded="false"] {
+    border: 1px solid var(--foreground);
+    box-shadow: 0 0 0 0px var(--foreground);
+    
+}
+
+.toggle-button::before,
+.toggle-button::after,
+.toggle-button .menuButton {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.toggle-button .menuButton {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+
+
+  .toggle-button[aria-expanded="true"]::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  
+  .toggle-button[aria-expanded="true"]::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+    opacity: 100%;
+  }
+  
+  .menuButton[aria-expanded="true"] {
+    opacity: 0;
+    width: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .menuButton .bars {
     transition:
         y 300ms ease-in 300ms,
@@ -203,13 +266,13 @@ nav a {
     transform-origin: center center;
     
 
-}
+}*/
 
 /*.menuButton[aria-expanded="true"] :is(.bar1, .bar3) {
     y: 45;
     
 }*/
-
+/*
 .menuButton[aria-expanded="true"] .bar1 {
     transform-origin: center center;
     y: 45;
@@ -226,7 +289,7 @@ nav a {
 
 .menuButton[aria-expanded="true"] .bar1 {
     rotate: 45deg;
-    /*transform: translate(0px, 10px);*/
+    /*transform: translate(0px, 10px);*//*
     opacity: 20%;
     x:10;
     y:45;
@@ -236,8 +299,8 @@ nav a {
 
 
 .menuButton[aria-expanded="true"] .bar3 {
-    rotate: -45deg;
-    /*transform: translate(0px, -10px);*/
+    rotate: -45deg;*/
+    /*transform: translate(0px, -10px);*//*
     opacity: 100%;
     x: 10;
     y: 45;
@@ -249,7 +312,7 @@ nav a {
     
 }
 
-
+*/
 
 .button:hover {
 

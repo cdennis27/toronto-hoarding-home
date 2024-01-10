@@ -10,9 +10,10 @@ console.log(menuButton.classList);
     const isOpened = menuButton.getAttribute('aria-expanded');
     if (isOpened === 'false') {
         menuButton.setAttribute('aria-expanded', 'true');
-
+        toggleButton.setAttribute('aria-expanded', 'true');
     }
     else {
         menuButton.setAttribute('aria-expanded', 'false');
+        toggleButton.setAttribute('aria-expanded', 'false');
     }
 });

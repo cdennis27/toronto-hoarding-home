@@ -19,7 +19,7 @@ body {
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
-.hamburger-menu {
+.toggle-button {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
 
   display: flex;
@@ -33,21 +33,21 @@ body {
   cursor: pointer;
 }
 
-.hamburger-menu:has(input:checked) {
-  --foreground: rgb(0, 255, 85);
+.toggle-button:has(input:checked) {
+  --foreground: rgb(238, 255, 0);
   --background: #333;
 }
 
-.hamburger-menu:has(input:focus-visible)::before,
-.hamburger-menu:has(input:focus-visible)::after,
-.hamburger-menu input:focus-visible {
+.toggle-button:has(input:focus-visible)::before,
+.toggle-button:has(input:focus-visible)::after,
+.toggle-button input:focus-visible {
   border: 1px solid var(--background);
   box-shadow: 0 0 0 1px var(--foreground);
 }
 
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
+.toggle-button::before,
+.toggle-button::after,
+.toggle-button input {
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
@@ -59,7 +59,7 @@ body {
     background-color var(--animation-timing);
 }
 
-.hamburger-menu input {
+.toggle-button input {
   appearance: none;
   padding: 0;
   margin: 0;
@@ -67,19 +67,19 @@ body {
   pointer-events: none;
 }
 
-.hamburger-menu:has(input:checked)::before {
+.toggle-button:has(input:checked)::before {
   rotate: 45deg;
   width: var(--x-width);
   translate: 0 calc(var(--bar-height) / -2);
 }
 
-.hamburger-menu:has(input:checked)::after {
+.toggle-button:has(input:checked)::after {
   rotate: -45deg;
   width: var(--x-width);
   translate: 0 calc(var(--bar-height) / 2);
 }
 
-.hamburger-menu input:checked {
+.toggle-button input:checked {
   opacity: 0;
   width: 0;
 }
@@ -95,6 +95,6 @@ body {
   min-height: 100vh;
 }
 
-.hamburger-menu:has(input:checked) + .sidebar {
+.toggle-button:has(input:checked) + .sidebar {
   translate: 0;
 }
