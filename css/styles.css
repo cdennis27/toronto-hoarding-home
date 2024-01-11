@@ -128,7 +128,7 @@ nav {
     background-color: var(--headerBg);
     color: var(--headerFont);
     z-index: 100;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 10px 0px 10px;
     transition: 300ms ease-in-out;
     margin-top: 0px;
 
@@ -165,6 +165,11 @@ nav a {
     transition: 300ms ease-in-out;
     border-radius: 5px;
     gap: 0px;
+}
+
+#mainLogo {
+    padding: 0;
+    height: 70px;
 }
 
 .toggle-button {
@@ -245,85 +250,6 @@ nav a {
     width: 50px;
     x: 10;
 }
-
-
-
-
-
-
-
-
-
-
-/*
-.menuButton .bars {
-    transition:
-        y 300ms ease-in 300ms,
-        rotate 300ms ease-in,
-        opacity 0ms 300ms
-   ;
-    transform-origin: center center;
-
-}
-
-.menuButton[aria-expanded="true"] .bars {
-    transition:
-        y 300ms ease-in,
-        rotate 300ms ease-in 300ms,
-        opacity 0ms 300ms
-   ;
-    transform-origin: center center;
-    
-
-}*/
-
-/*.menuButton[aria-expanded="true"] :is(.bar1, .bar3) {
-    y: 45;
-    
-}*/
-/*
-.menuButton[aria-expanded="true"] .bar1 {
-    transform-origin: center center;
-    y: 45;
-    x: 10;
-}
-
-.menuButton[aria-expanded="true"] .bar3 {
-    transform-origin: center center;
-    y: 45;
-    x: 10;
-    
-    
-}
-
-.menuButton[aria-expanded="true"] .bar1 {
-    rotate: 45deg;
-    /*transform: translate(0px, 10px);*/
-/*
-    opacity: 20%;
-    x:10;
-    y:45;
-    transform-origin: 50 center;
-}
-
-
-
-.menuButton[aria-expanded="true"] .bar3 {
-    rotate: -45deg;*/
-/*transform: translate(0px, -10px);*/
-/*
-    opacity: 100%;
-    x: 10;
-    y: 45;
-    transform-origin: 50 center;
-}
-
-.menuButton[aria-expanded="true"] .bar2 {
-    opacity: 0;
-    
-}
-
-*/
 
 .button:hover {
 
@@ -733,7 +659,7 @@ img {
 
 }
 
-.footerLeft {
+.footerModule {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -750,12 +676,29 @@ img {
 
 }
 
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+
+
+}
+
 .footerRight {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 50%;
     gap: 10px;
     height: 100%;
     background-color: var(--boxesBg);
