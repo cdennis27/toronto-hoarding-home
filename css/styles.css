@@ -558,6 +558,16 @@ img {
 
 
 
+.badges img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+
+
 
 
 
@@ -676,6 +686,15 @@ img {
     font-size: var(--fontSmall);
     border: rgb(255, 1, 196) 0px solid;
 
+
+}
+
+.footerModule img {
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
 
 }
 
