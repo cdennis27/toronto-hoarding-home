@@ -448,6 +448,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
@@ -518,20 +519,24 @@ img {
 
 .technologiesSummary {
     padding: 10px 0 10px 0;
+    border: purple 1px solid;
 }
 
 .stripe {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 
     width: 100%;
-    background-color: var(--boxesBg);
+    /*background-color: var(--boxesBg);*/
     padding: 30px 150px 30px 150px;
     margin-bottom: 30px;
+    background: linear-gradient(217deg, rgba(0, 148, 148, 0.384), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0, 137, 0, 0.405), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(158, 142, 0, 0.616), rgba(0,0,255,0) 70.71%);
 }
 
 .stripeContainer {
@@ -543,7 +548,7 @@ img {
     background-color: white;
     width: 100%;
     height: 100%;
-    padding: 30px 0px 10px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
 .stripeTitle {
@@ -787,7 +792,7 @@ img {
     padding: 10px 10px 100px 10px;
     font-size: var(--fontSmall);
     border: rgb(255, 1, 196) 0px solid;
-
+    
 }
 
 .footerBlock {
