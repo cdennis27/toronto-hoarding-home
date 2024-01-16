@@ -21,8 +21,7 @@
     --servicesTitle: rgb(51, 51, 51);
     --serviceFont: rgb(10, 10, 10);
     --serviceH3Background: rgb(170, 252, 255);
-    --serviceButtonBackground: rgb(170, 252, 255);
-    --serviceButtonFont: rgb(26, 26, 26);
+    --servicePBackground: rgb(170, 252, 255);
 
     --modalBg: rgba(0, 0, 0, 0.302);
     --modalButtons: rgba(255, 255, 255, 0.908);
@@ -285,19 +284,14 @@ nav a {
 
 .buttonEmergency {
     display: inline-block;
-    background-image: url("../assets/images/button2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: #333 0px 5px 10px 0px;
+    background-color: var(--emergency);
     text-decoration: none;
     width: 160px;
     height: 30px;
     margin: 0px 0px;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
     position: relative;
-    font-weight: 700;
 }
 
 .buttonEmergency.emergency::after,
@@ -390,15 +384,9 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 100;
-    padding: 0 0px 0 0px;
-    background-image: url("../assets/images/button4.jpg");
-       
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: #333 0px 5px 10px 0px;
-    
+
+    padding: 0 20px 0 20px;
+    background-color: var(--callButtonBg);
     transition: 300ms ease-in-out;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -617,10 +605,10 @@ img {
     align-items: center;
     width: 100%;
     height: 100%;
-
+    
     color: var(--headerFont);
     border: rgb(56, 1, 255) 0px solid;
-    padding: 250px 2vw 250px 2vw;
+    padding: 50px 2vw 50px 2vw;
 }
 
 .servicesContent h2 {
@@ -631,10 +619,6 @@ img {
     color: var(--servicesTitle);
     width: 100%;
 
-}
-
-.servicesTitle {
-    text-shadow: #bababa 1px 1px 2px;
 }
 
 .service {
@@ -653,13 +637,11 @@ img {
 
     position: relative;
     color: var(--headerFont);
-
+    
     font-size: 1.1rem;
     border: rgb(1, 255, 22) 0px solid;
     border-radius: 10px;
 }
-
-
 
 .service::before {
     content: "";
@@ -672,7 +654,7 @@ img {
     opacity: 0.50;
 
     border-radius: 5px;
-
+    
 }
 
 .serviceText {
@@ -732,7 +714,7 @@ img {
     bottom: 0vw;
     left: 0vw;
     font-size: 1rem;
-
+    
     color: var(--serviceFont);
     height: 30%;
     width: 47vw;
@@ -775,140 +757,8 @@ img {
     z-index: -1;
 }
 
-.services1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    gap: 2vw;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: var(--headerBg);
-    color: var(--font);
-    border: rgb(56, 1, 255) 1px solid;
-    padding: 50px 20vw 50px 20vw;
-
-}
-
-.service1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    width: 100%;
-    gap: 5px;
-    height: 450px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
 
 
-    position: relative;
-    color: var(--headerFont);
-
-    font-size: 1.1rem;
-    border: rgb(1, 255, 22) 0px solid;
-    border-radius: 10px;
-    overflow: visible;
-    margin-bottom: 20px;
-}
-
-.service1Title {
-    font-size: var(--fontMedium);
-    text-align: center;
-    border: purple 0px solid;
-    padding: 10px 10px 10px 10px;
-    color: var(--servicesTitle);
-    width: 100%;
-    text-shadow: #bababa 1px 1px 2px;
-
-
-}
-
-.service1Img {
-    width: 95%;
-    height: 250px;
-    object-fit: cover;
-    display: flex;
-    border-radius: 10px 10px 10px 10px;
-    border: rgb(8, 255, 239) 0px solid;
-    /*box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);*/
-    position: relative;
-    margin: 0px 5px 10px 5px;
-    overflow: hidden;
-
-}
-
-.service1Shadow {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    border: grey 0px solid;
-}
-
-.service1Shadow::before {
-    content: "";
-    position: absolute;
-    top: 36%;
-    left: 10%;
-    overflow: visible;
-    background: rgb(0, 0, 0);
-    
-    width: 80%;
-    height: 100%;
-    transform: perspective(10em) rotateX(25deg) scale(1, 0.25);
-    filter: blur(2em);
-}
-
-.service1 p {
-
-    display: block;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-
-    width: 95%;
-}
-
-.service1Button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 35%;
-    bottom: 10px;
-    width: 30%;
-    gap: 10px;
-    height: auto;
-    background-color: var(--serviceButtonBackground);
-    background-image: url("../assets/images/button1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-weight: 700;
-    color: var(--serviceButtonFont);
-    padding: 5px;
-    font-size: 1.1rem;
-    border-radius: 4px;
-    transition: 300ms ease-in-out;
-    border: rgb(0, 4, 60) 0px solid;
-    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.787);
-}
-
-.service1Button:hover {
-    
-    
-    transition: 300ms ease-in-out;
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.787);
-}
 
 
 
@@ -1088,11 +938,6 @@ img {
 
 }
 
-.hidden {
-    display: none;
-
-}
-
 
 
 /* Media Queries */
@@ -1150,7 +995,7 @@ img {
         gap: 4vw;
         width: 100%;
         height: 100%;
-
+        
         color: var(--headerFont);
         border: rgb(56, 1, 255) 0px solid;
         padding: 50px 3vw 50px 3vw;
@@ -1169,29 +1014,13 @@ img {
         background-repeat: no-repeat;
         border-radius: 10px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-
+    
         position: relative;
         color: var(--headerFont);
-
+        
         font-size: 1.1rem;
         border: rgb(1, 255, 22) 0px solid;
         border-radius: 10px;
-    }
-
-    .services1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        justify-content: center;
-        gap: 2vw;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-color: var(--headerBg);
-        color: var(--font);
-        border: rgb(56, 1, 255) 1px solid;
-        padding: 50px 2vw 50px 2vw;
-    
     }
 
 
