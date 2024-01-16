@@ -9,12 +9,16 @@
     --buttonBgHover: rgba(136, 231, 227, 0.683);
     --fontHover: rgb(0, 0, 0);
     --buttonBgAccentHover: rgba(1, 255, 22, 0.683);
+    --callButtonBg: rgba(0, 233, 19, 0.84);
+    --callButtonBgHover: rgb(0, 150, 12);
+    --callButtonFont: rgb(65, 65, 65);
+    --callButtonFontHover: rgba(255, 255, 255, 0.969);
     --fontBig: 26px;
     --fontMedium: 20px;
     --fontSmall: 14px;
     --boxesBg: rgb(224, 224, 224);
     --emergency: rgb(255, 222, 8);
-    --callButtonFont: rgb(65, 65, 65);
+    
     --modalBg: rgba(0, 0, 0, 0.302);
     --modalButtons: rgba(255, 255, 255, 0.908);
     --bannerTitle: rgba(255, 255, 255);
@@ -378,19 +382,19 @@ img {
     align-items: center;
 
     padding: 0 20px 0 20px;
-    background-color: var(--boxesBg);
-
+    background-color: var(--callButtonBg);
+    transition: 300ms ease-in-out;
     margin-top: 0px;
     margin-bottom: 20px;
-    border: var(--boxesBg) 1px solid;
+    border: var(--boxesBg) 0px solid;
 }
 
 .callButton:hover {
-    background-color: var(--buttonBgAccentHover);
-    color: var(--fontHover);
+    background-color: var(--callButtonBgHover);
+    color: var(--callButtonFontHover);
 
-    transition: 400ms ease-in-out;
-    border: var(--buttonBgAccentHover) 1px solid;
+    transition: 300ms ease-in-out;
+    border: var(--buttonBgAccentHover) 0px solid;
 }
 
 .containerTitle {
@@ -494,11 +498,14 @@ img {
 }
 
 .stripe {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    width: 100%;
     background-color: var(--boxesBg);
     padding: 30px 150px 30px 150px;
     margin-bottom: 30px;
@@ -512,7 +519,7 @@ img {
     gap: 0px;
     background-color: white;
     width: 100%;
-    height: 500px;
+    height: 100%;
     padding: 30px 0px 10px 0px;
 }
 
@@ -538,10 +545,11 @@ img {
 }
 
 .stripeText {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    text-align: left;
     width: 100%;
     padding: 0px 50px 0px 50px;
 }
@@ -744,6 +752,29 @@ img {
     object-fit: fill;
 
 }
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 100px;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+}
+
+.socialMedia img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+
+}
 
 .poweredBy {
     display: flex;
@@ -761,6 +792,8 @@ img {
 
 
 }
+
+
 
 .poweredByLogo {
     display: flex;
