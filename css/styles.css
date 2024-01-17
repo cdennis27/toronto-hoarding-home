@@ -517,10 +517,6 @@ img {
 
 }
 
-.technologiesSummary {
-    padding: 10px 0 10px 0;
-    border: purple 1px solid;
-}
 
 .stripe {
     display: grid;
@@ -776,6 +772,59 @@ img {
     box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.787);
 }
 
+.technologiesContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    
+    
+    color: var(--font);
+    padding: 50px 20vw 50px 20vw;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 1px solid;
+    
+}
+
+.technologiesContent h2 {
+    font-size: var(--fontBig);
+    text-align: center;
+    border: purple 0px solid;
+    padding: 10px 10px 10px 10px;
+    color: var(--servicesTitle);
+    width: 100%;
+
+}
+
+.technologiesContent ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 5px;
+    color: var(--font);
+    padding: 10px 20px 10px 20px;
+    font-size: var(--fontSmall);
+    border: rgb(9, 240, 109) 1px solid;
+}
+
+.aboutusTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 50px;
+    background-color: var(--bg);
+    color: var(--font);
+    padding: 30px 10px 50px 10px;
+    font-size: var(--fontBig);
+    border: rgb(255, 1, 196) 0px solid;
+}
 
 
 
