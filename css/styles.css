@@ -393,12 +393,12 @@ img {
     z-index: 100;
     padding: 0 0px 0 0px;
     background-image: url("../assets/images/button4.jpg");
-       
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: #333 0px 5px 10px 0px;
-    
+
     transition: 300ms ease-in-out;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -448,7 +448,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    
+
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
@@ -530,9 +530,9 @@ img {
     /*background-color: var(--boxesBg);*/
     padding: 30px 150px 30px 150px;
     margin-bottom: 30px;
-    background: linear-gradient(217deg, rgba(0, 148, 148, 0.384), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0, 137, 0, 0.405), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(158, 142, 0, 0.616), rgba(0,0,255,0) 70.71%);
+    background: linear-gradient(217deg, rgba(0, 148, 148, 0.384), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 137, 0, 0.405), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(158, 142, 0, 0.616), rgba(0, 0, 255, 0) 70.71%);
 }
 
 .stripeContainer {
@@ -541,7 +541,7 @@ img {
     justify-content: start;
     align-items: center;
     gap: 0px;
-    background-color: white;
+    background-color: var(--bg);
     width: 100%;
     height: 100%;
     padding: 30px 0px 30px 0px;
@@ -620,7 +620,7 @@ img {
 
 }
 
-.services1 {
+.services {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -720,7 +720,7 @@ img {
     left: 10%;
     overflow: visible;
     background: rgb(0, 0, 0);
-    
+
     width: 80%;
     height: 100%;
     transform: perspective(10em) rotateX(25deg) scale(1, 0.25);
@@ -765,8 +765,8 @@ img {
 }
 
 .serviceButton:hover {
-    
-    
+
+
     transition: 300ms ease-in-out;
     color: rgb(255, 255, 255);
     box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.787);
@@ -779,13 +779,13 @@ img {
     align-items: center;
     width: 100%;
     gap: 10px;
-    
-    
+
+
     color: var(--font);
     padding: 50px 20vw 50px 20vw;
     font-size: var(--fontSmall);
     border: rgb(255, 1, 196) 1px solid;
-    
+
 }
 
 .technologiesContent h2 {
@@ -826,6 +826,46 @@ img {
     border: rgb(255, 1, 196) 0px solid;
 }
 
+.locationsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    gap: 10px;
+    height: 100%;
+
+    color: var(--font);
+    padding: 50px 10px 50px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+    background: linear-gradient(217deg, rgba(0, 148, 148, 0.384), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 137, 0, 0.405), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(158, 142, 0, 0.616), rgba(0, 0, 255, 0) 70.71%);
+
+}
+
+
+.locationsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    gap: 10px;
+    background-color: var(--bg);
+    border: red 0px solid;
+    padding: 50px 10px 50px 10px;
+
+
+
+
+
+}
+
+
+
 
 
 .footer {
@@ -841,7 +881,7 @@ img {
     padding: 10px 10px 100px 10px;
     font-size: var(--fontSmall);
     border: rgb(255, 1, 196) 0px solid;
-    
+
 }
 
 .footerBlock {
@@ -1093,7 +1133,7 @@ img {
         border-radius: 10px;
     }
 
-    .services1 {
+    .services {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -1106,7 +1146,7 @@ img {
         color: var(--font);
         border: rgb(56, 1, 255) 1px solid;
         padding: 50px 2vw 50px 2vw;
-    
+
     }
 
 
