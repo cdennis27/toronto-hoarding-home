@@ -1378,6 +1378,11 @@ img {
 
     }
 
+    .poweredByLogo {
+        width: 50px;
+        height: auto;
+    }
+
 
 }
 
