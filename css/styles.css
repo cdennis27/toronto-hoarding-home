@@ -442,7 +442,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: green 1px solid;
+    border: green 0px solid;
 }
 
 .container1100 {
@@ -1308,7 +1308,7 @@ img {
     }
 
     .footer {
-        border: orange 1px solid;
+        border: orange 0px solid;
         height: fit-content;
         margin-top: 30px;
     }
@@ -1326,7 +1326,7 @@ img {
         color: var(--font);
         padding: 10px 10px 10px 10px;
         font-size: var(--fontSmall);
-        border: rgb(255, 1, 196) 2px solid;
+        border: rgb(255, 1, 196) 0px solid;
     }
 
     .footerModule {
@@ -1416,5 +1416,51 @@ img {
         height: 40px;
 
     }
+
+}
+
+@media (max-width: 390px) {
+    
+        .logoContainer {
+            left: 5%;
+        }
+    
+        .logoImg {
+            height: 20px;
+            width: auto !important;
+            object-fit: fill;
+            padding: 0;
+    
+        }
+    
+        .banner {
+            height: 200px;
+            padding: 0 0 0 0;
+    
+        }
+    
+        .bannerText {
+            top: 10px;
+            font-size: .8rem;
+        }
+    
+        .bannerSubtitle {
+            font-size: 1.1rem;
+        }
+    
+        .callButton {
+            font-size: 1.0rem;
+            border: red 0px solid;
+            height: 40px;
+    
+        }
+
+        .serviceButton {
+            font-size: 1.0rem;
+            border: red 0px solid;
+            height: 40px;
+    
+        }
+
 
 }
