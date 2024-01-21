@@ -1422,6 +1422,16 @@ img {
 
     }
 
+    .stripeTitle, .stripeText, .stripeSubtitle  {
+        padding: 15px 20px 5px 20px;
+        border: red 0px solid;
+    }
+
+    .stripeList {
+        padding: 15px 20px 15px 35px;
+        border: orange 0px solid;
+    }
+
 }
 
 @media (max-width: 390px) {
