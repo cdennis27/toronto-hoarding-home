@@ -632,7 +632,7 @@ img {
     background-color: var(--headerBg);
     color: var(--font);
     border: rgb(56, 1, 255) 0px solid;
-    padding: 50px 20vw 50px 20vw;
+    padding: 50px 15vw 50px 15vw;
 
 }
 
@@ -645,7 +645,7 @@ img {
     padding: 10px 10px 10px 10px;
     color: var(--servicesTitle);
     width: 100%;
-    
+
 }
 
 .servicesTitle {
@@ -789,7 +789,7 @@ img {
         linear-gradient(127deg, rgba(0, 137, 0, 0.405), rgba(0, 255, 0, 0) 70.71%),
         linear-gradient(336deg, rgba(158, 142, 0, 0.616), rgba(0, 0, 255, 0) 70.71%);
     padding: 50px 20vw 50px 20vw;
-    }
+}
 
 .mainServices {
     background-color: var(--bg);
@@ -1076,36 +1076,43 @@ img {
 
 @media (max-width: 1200px) {
 
-.callButton {
-    font-size: 1.4rem;
-    border: red 0px solid;
-    height: 50px;
-    
-}
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 0 0 0 0;
+    }
 
-.mainServices {
-    padding: 30px 0px 30px 0px;
+    .callButton {
+        font-size: 1.4rem;
+        border: red 0px solid;
+        height: 50px;
 
-}
+    }
 
-.bannerTitle {
-    font-size: 2.8rem;
+    .mainServices {
+        padding: 30px 0px 30px 0px;
 
-}
+    }
 
-.bannerSubtitle {
-    font-size: 1.2rem;
+    .bannerTitle {
+        font-size: 2.8rem;
+
+    }
+
+    .bannerSubtitle {
+        font-size: 1.2rem;
 
 
     }
-.heroSubtitle {
-    font-size: 1.2rem;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px 0 0px 0;
-}
+
+    .heroSubtitle {
+        font-size: 1.2rem;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px 0 0px 0;
+    }
+
     .container1100 {
         display: flex;
         width: 100%;
@@ -1126,10 +1133,21 @@ img {
 
         padding: 30px 20px 30px 20px;
         margin-bottom: 30px;
-        
+
     }
 
-} 
+    .services {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+        padding: 30px 20vw 30px 20vw;
+    }
+
+}
 
 @media (max-width: 900px) {
     .toggle-button {
@@ -1174,42 +1192,27 @@ img {
 
     }
 
-    .services {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    .bannerTitle {
+        font-size: 2.0rem;
+
+    }
+
+    .bannerSubtitle {
+        font-size: 1.0rem;
+
+
+    }
+
+    .heroSubtitle {
+        font-size: 1.0rem;
+        text-align: center;
+        justify-items: center;
         align-items: center;
-        justify-content: center;
-        gap: 4vw;
         width: 100%;
-        height: 100%;
-
-        color: var(--headerFont);
-        border: rgb(56, 1, 255) 0px solid;
-        padding: 50px 3vw 50px 3vw;
+        padding: 0px 0 0px 0;
     }
 
-    .service {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 94vw;
-        gap: 0vw;
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 10px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-
-        position: relative;
-        color: var(--headerFont);
-
-        font-size: 1.1rem;
-        border: rgb(1, 255, 22) 0px solid;
-        border-radius: 10px;
-    }
-
+    
     .services {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1221,10 +1224,17 @@ img {
         height: 100%;
         background-color: var(--headerBg);
         color: var(--font);
-        border: rgb(56, 1, 255) 1px solid;
+        border: rgb(56, 1, 255) 0px solid;
         padding: 50px 2vw 50px 2vw;
 
     }
+
+    .service {
+        height: fit-content;
+        padding: 20px 0 50px 0;
+        background-color: #e6e6e6;
+    }
+
 
 
 }
