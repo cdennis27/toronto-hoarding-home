@@ -421,10 +421,10 @@ img {
     text-align: center;
     width: 100%;
     gap: 10px;
-    height: 50px;
+    height: 80px;
     background-color: var(--bg);
     color: var(--font);
-    padding: 10px 10px 10px 10px;
+    padding: 20px 10px 20px 10px;
     font-size: var(--fontBig);
     border: rgb(255, 1, 196) 0px solid;
 }
@@ -645,7 +645,7 @@ img {
     padding: 10px 10px 10px 10px;
     color: var(--servicesTitle);
     width: 100%;
-
+    
 }
 
 .servicesTitle {
@@ -660,7 +660,7 @@ img {
     align-items: center;
     width: 100%;
     gap: 5px;
-    height: 450px;
+    height: 500px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -685,7 +685,7 @@ img {
     color: var(--servicesTitle);
     width: 100%;
     text-shadow: #bababa 1px 1px 2px;
-
+    height: 50px;
 
 }
 
@@ -784,15 +784,23 @@ img {
     color: var(--font);
     padding: 50px 20vw 50px 20vw;
     font-size: var(--fontSmall);
-    border: rgb(255, 1, 196) 1px solid;
+    border: rgb(255, 1, 196) 0px solid;
+    background: linear-gradient(217deg, rgba(0, 148, 148, 0.384), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 137, 0, 0.405), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(158, 142, 0, 0.616), rgba(0, 0, 255, 0) 70.71%);
+    padding: 50px 20vw 50px 20vw;
+    }
 
+.mainServices {
+    background-color: var(--bg);
+    padding: 30px 20px 30px 20px;
 }
 
 .technologiesContent h2 {
     font-size: var(--fontBig);
     text-align: center;
     border: purple 0px solid;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 10px 20px 10px;
     color: var(--servicesTitle);
     width: 100%;
 
@@ -808,7 +816,7 @@ img {
     color: var(--font);
     padding: 10px 20px 10px 20px;
     font-size: var(--fontSmall);
-    border: rgb(9, 240, 109) 1px solid;
+    border: rgb(9, 240, 109) 0px solid;
 }
 
 .aboutusTitle {
@@ -864,7 +872,21 @@ img {
 
 }
 
+.contactUsInfoItemIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    gap: 10px;
+    height: 50px;
+    background-color: var(--bg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
 
+}
 
 
 
