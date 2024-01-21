@@ -1074,9 +1074,64 @@ img {
 
 /* Media Queries */
 
+@media (max-width: 1200px) {
+
+.callButton {
+    font-size: 1.4rem;
+    border: red 0px solid;
+    height: 50px;
+    
+}
+
+.mainServices {
+    padding: 30px 0px 30px 0px;
+
+}
+
+.bannerTitle {
+    font-size: 2.8rem;
+
+}
+
+.bannerSubtitle {
+    font-size: 1.2rem;
 
 
-@media (max-width: 800px) {
+    }
+.heroSubtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0 0px 0;
+}
+    .container1100 {
+        display: flex;
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: red 0px solid;
+    }
+
+    .stripe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+
+        padding: 30px 20px 30px 20px;
+        margin-bottom: 30px;
+        
+    }
+
+} 
+
+@media (max-width: 900px) {
     .toggle-button {
         display: flex;
     }
