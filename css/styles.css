@@ -176,6 +176,7 @@ nav a {
     transition: 300ms ease-in-out;
     border-radius: 5px;
     gap: 0px;
+    z-index: 100;
 }
 
 #mainLogo {
@@ -390,7 +391,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 1;
     padding: 0 0px 0 0px;
     background-image: url("../assets/images/button4.jpg");
 
@@ -1137,14 +1138,44 @@ img {
     }
 
     .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        gap: 2vw;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: var(--headerBg);
+        color: var(--font);
+        border: rgb(56, 1, 255) 0px solid;
+        padding: 50px 10vw 50px 10vw;
 
+    }
+
+    .service {
+        height: fit-content;
+        padding: 20px 0 50px 0;
+        background-color: #e6e6e6;
+    }
+
+    .technologiesContent {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         gap: 50px;
-        padding: 30px 20vw 30px 20vw;
+
+        padding: 30px 20px 30px 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .mainServices {
+        
+        padding: 30px 20px 30px 20px;
+    
     }
 
 }
@@ -1198,18 +1229,31 @@ img {
     }
 
     .bannerSubtitle {
-        font-size: 1.0rem;
-
+        font-size: 1.2rem;
+        text-align: center;
 
     }
 
     .heroSubtitle {
-        font-size: 1.0rem;
+        font-size: 1.2rem;
         text-align: center;
         justify-items: center;
         align-items: center;
         width: 100%;
         padding: 0px 0 0px 0;
+    }
+
+    .technologiesContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+
+        padding: 30px 20px 30px 20px;
+        margin-bottom: 30px;
+
     }
 
     
@@ -1235,6 +1279,37 @@ img {
         background-color: #e6e6e6;
     }
 
+
+
+
+
+    .footerBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        height: 100%;
+        background-color: var(--boxesBg);
+        color: var(--font);
+        padding: 10px 10px 10px 10px;
+        font-size: var(--fontSmall);
+        border: rgb(255, 1, 196) 0px solid;
+    }
+
+    .footerModule {
+    
+        width: 100%;
+        gap: 10px;
+        height: 100%;
+        background-color: var(--boxesBg);
+        color: var(--font);
+        padding: 10px 10px 10px 10px;
+        font-size: var(--fontSmall);
+        border: rgb(255, 1, 196) 0px solid;
+    
+    }
 
 
 }
