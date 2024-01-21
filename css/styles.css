@@ -442,7 +442,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border: green 1px solid;
 }
 
 .container1100 {
@@ -889,6 +889,20 @@ img {
 
 }
 
+.underConstruction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--bg);
+    color: var(--font);
+    padding: 50px 10px 50px 10px;
+
+}
+
 
 
 .footer {
@@ -1178,6 +1192,12 @@ img {
     
     }
 
+    .locationsBox {
+        width: 70vw;
+    }
+
+
+
 }
 
 @media (max-width: 900px) {
@@ -1243,6 +1263,10 @@ img {
         padding: 0px 0 0px 0;
     }
 
+    .youtube {
+        max-width: 80vw;
+    }
+
     .technologiesContent {
         display: flex;
         flex-direction: column;
@@ -1279,15 +1303,22 @@ img {
         background-color: #e6e6e6;
     }
 
+    .locationsBox {
+        width: 90vw;
+    }
 
-
-
+    .footer {
+        border: orange 1px solid;
+        height: fit-content;
+        margin-top: 30px;
+    }
 
     .footerBlock {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
         width: 100%;
         gap: 10px;
         height: 100%;
@@ -1295,7 +1326,7 @@ img {
         color: var(--font);
         padding: 10px 10px 10px 10px;
         font-size: var(--fontSmall);
-        border: rgb(255, 1, 196) 0px solid;
+        border: rgb(255, 1, 196) 2px solid;
     }
 
     .footerModule {
