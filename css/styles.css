@@ -350,13 +350,18 @@ img {
     display: block;
 }
 
+.round {
+    border-radius: 15px;
+    margin: 0 0 20px 0;
+}
+
 .bannerText {
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 100px;
+    top: 70px;
     color: var(--bannerTitle);
     font-size: var(--fontBig);
     text-align: center;
@@ -641,13 +646,32 @@ img {
 
 
 .servicesContent h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: var(--fontBig);
     text-align: center;
     border: purple 0px solid;
     padding: 10px 10px 10px 10px;
     color: var(--servicesTitle);
+    margin: 10px 0px 0px 0px;
     width: 100%;
+    height: 80px;
+}
 
+.servicesSubtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontMedium);
+    text-align: center;
+    border: purple 0px solid;
+    padding: 0px 10px 0px 10px;
+    color: var(--servicesTitle);
+    width: 100%;
+    
 }
 
 .servicesTitle {
@@ -827,8 +851,9 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
+    
     gap: 10px;
-    height: 50px;
+    
     background-color: var(--bg);
     color: var(--font);
     padding: 30px 10px 50px 10px;
