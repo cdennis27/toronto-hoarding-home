@@ -404,7 +404,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: #333 0px 5px 10px 0px;
-    border-radius: 15px;
+    border-radius: 10px;
     transition: 300ms ease-in-out;
     
     border: var(--boxesBg) 0px solid;
