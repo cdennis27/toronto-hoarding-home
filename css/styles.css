@@ -1097,6 +1097,82 @@ img {
 
 }
 
+
+
+
+
+/**********************************/
+
+.contactUsForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 50px 10px 50px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+    margin: 20px 0px 20px 0px;
+    border-radius: 15px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 20px 10px 20px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sticky {
     position: fixed;
 }
