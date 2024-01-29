@@ -27,12 +27,7 @@
     --modalBg: rgba(0, 0, 0, 0.302);
     --modalButtons: rgba(255, 255, 255, 0.908);
     --bannerTitle: rgba(255, 255, 255);
-    --bannerSubtitle: rgb(210, 199, 253);
-    --bannerGradient: (to right, rgb(163, 169, 169), rgb(51, 105, 105));
-    --bannerGradient1: rgb(133, 139, 139);
-    --bannerGradient2: rgb(0, 18, 71);
-
-
+    --bannerSubtitle: rgb(8, 255, 239);
 
     /* Variables for Menu Button  */
     --bar-width: 40px;
@@ -184,28 +179,6 @@ nav a {
     z-index: 100;
 }
 
-.logoContainer {
-    width: 100px;
-    height: 100%;
-    border: black 1px solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 0px 0px;
-}
-
-.logoContainer .logo {
-    width: 100%;
-    height: 100%;
-    border: black 0px solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 0px 0px;
-}
-
 #mainLogo {
     padding: 0;
     width: 70px;
@@ -312,8 +285,8 @@ nav a {
     border: rgb(255, 255, 255) 0px solid;
 
     
-    height: 100%;
-    max-width: 70px;
+    height: 50px;
+    width: auto !important;
     object-fit: fill;
 
 }
@@ -372,7 +345,7 @@ nav a {
     height: 100%;
     width: 100%;
     background-color: rgb(41, 53, 53);
-    background-image: linear-gradient(to right, var(--bannerGradient1), var(--bannerGradient2));
+    background-image: linear-gradient(to right, rgb(163, 169, 169), rgb(51, 105, 105));
     opacity: 0.85;
     position: absolute;
 }
@@ -1616,12 +1589,12 @@ img {
 @media (max-width: 500px) {
 
     .logoContainer {
-        left: 1%;
+        left: 5%;
     }
 
     .logoImg {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: auto !important;
         object-fit: fill;
         padding: 0;
 
@@ -1673,12 +1646,12 @@ img {
 @media (max-width: 390px) {
 
     .logoContainer {
-        left: 1%;
+        left: 5%;
     }
 
     .logoImg {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: auto !important;
         object-fit: fill;
         padding: 0;
 
