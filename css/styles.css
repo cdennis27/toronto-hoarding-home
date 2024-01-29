@@ -33,9 +33,9 @@
     --bannerGradient2: rgb(0, 18, 71);
 
     /* Variables for Stripe */
-    --stripeGradient: linear-gradient(217deg, rgba(0, 255, 8, 0.155), rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, rgba(119, 0, 255, 0.405), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(59, 0, 72, 0.834), rgba(0, 0, 255, 0) 70.71%);
+    --stripeGradient: linear-gradient(217deg, rgba(8, 0, 153, 0.851), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(119, 0, 255, 0.405), rgba(179, 255, 179, 0.05) 70.71%),
+    linear-gradient(336deg, rgba(125, 0, 170, 0.834), rgba(0, 0, 255, 0) 70.71%);
 
 
     /* Variables for Menu Button  */
