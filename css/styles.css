@@ -32,6 +32,10 @@
     --bannerGradient1: rgb(133, 139, 139);
     --bannerGradient2: rgb(0, 18, 71);
 
+    /* Variables for Stripe */
+    --stripeGradient: linear-gradient(217deg, rgba(0, 255, 8, 0.155), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(119, 0, 255, 0.405), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(59, 0, 72, 0.834), rgba(0, 0, 255, 0) 70.71%);
 
 
     /* Variables for Menu Button  */
@@ -569,12 +573,21 @@ img {
 
     width: 100%;
     /*background-color: var(--boxesBg);*/
-    padding: 30px 150px 30px 150px;
+    padding: 30px 350px 30px 350px;
     margin-bottom: 30px;
-    background: linear-gradient(217deg, rgba(0, 148, 148, 0.384), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(0, 137, 0, 0.405), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgba(158, 142, 0, 0.616), rgba(0, 0, 255, 0) 70.71%);
+    background-image: var(--stripeGradient);
+    background-size: 200% 100%;
+    background-position: left;
+    
+    animation: bg-animation 20s infinite alternate;
 }
+
+@keyframes bg-animation {
+    0% {background-position:left}
+    100% {background-position: right}
+}
+
+
 
 .stripeContainer {
     display: flex;
@@ -920,9 +933,11 @@ img {
     padding: 50px 20vw 50px 20vw;
     font-size: var(--fontSmall);
     border: rgb(255, 1, 196) 0px solid;
-    background: linear-gradient(217deg, rgba(0, 148, 148, 0.384), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(0, 137, 0, 0.405), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgba(158, 142, 0, 0.616), rgba(0, 0, 255, 0) 70.71%);
+    background: var(--stripeGradient);
+    background-size: 200% 100%;
+    background-position: left;
+    animation: bg-animation 5s infinite alternate;
+
     padding: 50px 20vw 50px 20vw;
 }
 
@@ -1299,7 +1314,12 @@ img {
 
 
 /* Media Queries */
-
+@media (max-width: 1750px) {
+    .stripe {
+        padding: 30px 10vw 30px 10vw;
+    
+    }
+}
 @media (max-width: 1200px) {
 
     .navbar a {
