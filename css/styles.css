@@ -605,6 +605,21 @@ img {
     border-radius: 15px;
 }
 
+.homeVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 550px;
+    background-color: var(--bg);
+    color: var(--font);
+    padding: 50px 10px 50px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+    object-fit: cover;
+}
 
 
 
@@ -1434,6 +1449,7 @@ img {
 
     .youtube {
         max-width: 80vw;
+        
     }
 
     .technologiesContent {
