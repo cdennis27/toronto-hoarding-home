@@ -1382,7 +1382,7 @@ img {
     align-items: center;
     width: 100%;
     height: 40px;
-    border: black 1px solid;
+    border: black 0px solid;
     gap: 10px;
     position: relative;
 
@@ -1390,7 +1390,7 @@ img {
 }
 
 .servicesOption label, .occupancy label {
-    border: red 1px solid;
+    border: red 0px solid;
     width: 100%;
     position: relative;
     left: 60px;
