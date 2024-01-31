@@ -64,7 +64,7 @@ function sendMail() {
     console.log(servicesList);
     //debugger;
 
-    if (email.value === "" || name.value === "" || address.value === "" || message.value === "") {
+    if (email.value === "" || name.value === "" || message.value === "") {
         errorElement.innerText = ("Please fill out all fields")
         return
     }
@@ -79,8 +79,7 @@ function sendMail() {
 
     if (address.value === "") {
         errorElement.innerText = ("Please enter your address")
-        alert("Please enter a location city or address, form will be reset.")
-        return
+        address.value = "no location given by customer!"
     }
 
     if (phone.value === "") {
