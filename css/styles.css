@@ -1060,7 +1060,7 @@ img {
     height: 250px;
     gap: 10px;
     background-color: var(--bg);
-    border: red 0px solid;
+    border: red 1px solid;
     padding: 20px 10px 50px 10px;
 }
 
