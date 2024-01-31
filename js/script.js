@@ -52,7 +52,7 @@ function sendMail() {
 
 
     for (var i = 0; i < ServicesItem.length; i++) {
-        
+
         console.log(ServicesItem[i].value);
         if (ServicesItem[i].type == 'checkbox' && ServicesItem[i].checked == true) {
             servicesOption.push(ServicesItem[i].value);
@@ -77,8 +77,31 @@ function sendMail() {
         return
     }
 
+    if (address.value === "") {
+        errorElement.innerText = ("Please enter your address")
+        alert("Please enter a location city or address, form will be reset.")
+        return
+    }
 
-    
+    if (phone.value === "") {
+        errorElement.innerText = ("Please enter your phone number")
+        alert("Please enter a valid phone number, form will be reset.")
+        return
+    }
+
+    if (timeReach.value === "") {
+        timeReach.value = "not given by customer!"
+    }
+
+    if (servicesList === "") {
+        errorElement.innerText = ("Please select at least one service")
+        alert("Please enter at least one service, form will be reset.")
+        return
+    }
+
+
+
+
 
 
     let params = {
@@ -95,7 +118,7 @@ function sendMail() {
     console.log(params)
     console.log(params.name, params.email, params.address, params.phone, params.timeReach, params.servicesList, params.message)
 
-    //emailjs.send("service_uvypnm9", "template_3mb35ve", params).then(alert("Email Sent!!!"))
+    emailjs.send("service_uvypnm9", "template_3mb35ve", params).then(alert("Email Sent!!!"))
     console.log(params)
 
 
