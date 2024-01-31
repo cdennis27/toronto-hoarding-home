@@ -62,7 +62,7 @@ function sendMail() {
     console.log(servicesOption.join(", "));
     servicesList = servicesOption.join(", ");
     console.log(servicesList);
-    debugger;
+    //debugger;
 
     if (email.value === "" || name.value === "" || address.value === "" || message.value === "") {
         errorElement.innerText = ("Please fill out all fields")
