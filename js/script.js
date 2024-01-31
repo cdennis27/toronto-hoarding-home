@@ -1,11 +1,32 @@
+
+/* NAVBAR VARIABLES */
+
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbar = document.getElementsByClassName('navbar')[0]
 const menuButton = document.querySelector('.menuButton')
+
+/* FORM VARIABLES */
+
 const name = document.getElementById('name')
 const email = document.getElementById('email')
-const subject = document.getElementById('subject')
+const address = document.getElementById('address')
+const phone = document.getElementById('phone')
+const timeReach = document.getElementById('timeReach')
+var ServicesItem = document.getElementsByClassName('servicesItem')
+var servicesList;
+var servicesOption = [];
+
+
+
+
 const message = document.getElementById('message')
+
+
+
 const errorElement = document.getElementById('error')
+
+/* navbar menu for mobile */
+
 
 toggleButton.addEventListener('click', () => {
     navbar.classList.toggle('active');
@@ -23,11 +44,27 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
+/* function for contact form */
+
 function sendMail() {
 
-    console.log("email info" + name.value, email.value, subject.value, message.value)
+    console.log("email info" + name.value, email.value, address.value, message.value, phone.value, servicesOption.value)
 
-    if (email.value === "" || name.value === "" || subject.value === "" || message.value === "") {
+
+    for (var i = 0; i < ServicesItem.length; i++) {
+        
+        console.log(ServicesItem[i].value);
+        if (ServicesItem[i].type == 'checkbox' && ServicesItem[i].checked == true) {
+            servicesOption.push(ServicesItem[i].value);
+        }
+        console.log(servicesOption);
+    }
+    console.log(servicesOption.join(", "));
+    servicesList = servicesOption.join(", ");
+    console.log(servicesList);
+    debugger;
+
+    if (email.value === "" || name.value === "" || address.value === "" || message.value === "") {
         errorElement.innerText = ("Please fill out all fields")
         return
     }
@@ -41,20 +78,28 @@ function sendMail() {
     }
 
 
-
+    
 
 
     let params = {
         name: name.value,
         email: email.value,
-        subject: subject.value,
+        address: address.value,
+        phone: phone.value,
+        timeReach: timeReach.value,
+        servicesList: servicesList,
+
         message: message.value
+
     }
     console.log(params)
-    console.log(params.name, params.email, params.subject)
+    console.log(params.name, params.email, params.address, params.phone, params.timeReach, params.servicesList, params.message)
 
     //emailjs.send("service_uvypnm9", "template_3mb35ve", params).then(alert("Email Sent!!!"))
     console.log(params)
+
+
+    console.log(params.name, params.email, params.address, params.phone, params.timeReach, params.servicesList, params.message);
 
 
 }
